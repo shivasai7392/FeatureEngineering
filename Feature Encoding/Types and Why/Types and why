@@ -1,0 +1,190 @@
+Types of feature engineering Encoding Techniques
+
+1.Nominal Encoding
+
+2.Ordinal Encoding
+
+for example there is a datset of students with their grades and Gender
+
+
+grades     Gender
+
+A           male
+
+B           female
+
+c           male
+
+D           male
+
+E           female
+
+F           male
+
+grades is encoded using ordinal encoding
+Gender is encoded usinf nominal encoding
+
+
+Types of Nominal Encoding
+
+1.One hot encoding
+
+2.One hot encoding with many many categories
+
+3.Mean encoding
+
+
+
+
+
+Types of Ordinal Encoding
+
+1.label encoding
+
+2.Target guided ordinal encoding
+
+
+
+
+One Hot encoding
+
+Country
+
+India
+
+Aus
+
+WestIndies
+
+            after encoding
+            
+               India          Aus       WestIndies
+                   1            0          0
+                   0            1          0
+                   0            0          1
+Disadvantages
+
+1.Curse of Dimensionalities
+
+
+label encoding
+
+grades
+
+A
+
+B
+
+C
+
+D
+
+E
+
+F
+
+    After encoding
+    
+    A   B   C  D  E  F
+    1   2   3  4  5  6
+    
+    grades
+    
+    1
+    
+    2
+    
+    3
+    
+    4
+    
+    5
+    
+    6
+    
+One hot encoding with multiple categories
+
+for a feature of 50 nominal categories
+
+top 10 most occuring columns are converted into One hot encoding
+
+so we will create 10 -1(dummy) columns but not 49
+
+
+target guided ordinal encoding
+
+f1   O/p
+
+A    0
+
+B    0
+
+B    1
+
+A    0
+
+
+we calculate the mean of the target for feature A and B and thus
+
+A - mean is 0
+
+B - mean is 1
+
+so B is given the highest rank
+
+
+f1    O/p
+
+0     0
+
+1     0
+
+1     1
+
+0     0
+
+
+Mean Encoding
+
+
+replacing the category with mean value 
+
+
+
+Why feature Scaling
+___________________
+
+scaling down the features between 0 and 1 or any range 
+
+
+this might be usefule when using 
+algorithms like 
+
+1.Linear regression(for gradient descent finding the global minima)
+
+
+2.k means clustering
+
+3.k neighbours classifier
+  
+  2 and 3 perform on Eucledian distance
+ 
+4.Deep learning algorithms
+
+
+When we should not do 
+feature scaling
+for algorithms like
+
+1.Decission tree
+
+2.Random forest
+
+3.xgboost
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+handling missing values for categorical values
+
+i.Delete the rows
+
+2.Replace with most frequent value
+
+.Apply classifier algorithm
+
+
+4.Apply unsupervised algorithm
+

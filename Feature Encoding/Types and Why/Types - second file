@@ -1,0 +1,18 @@
+1.Count or frequency encoding
+
+this method is used to handle many categorical values for a feature
+
+
+count or frequency encoding replaces each categorical value with count or frequency of that category in the dataset
+
+
+Advantages
+
+it is simple to implement
+does not increase the dimensionality
+
+Disadvatages
+
+if two categories having same frequency then there is a chance of lossing some valuable informtion
+
+some times it may lose the power of predicting the output totally depends on the dataset

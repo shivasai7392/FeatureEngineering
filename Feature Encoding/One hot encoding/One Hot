@@ -1,0 +1,15 @@
+if there are more no of categories for a label then with the help of one hot encoding we can create columns with value 0 or 1 but
+it may result in curse of dimensionality
+
+in those cases we can take top 10 most occuring categories for our one hot encoding
+
+advantages
+
+1.Straightforward to implement
+2.does not require hrs of data exploration
+3.does not expand massively the feature space
+
+disadvantages
+
+1.does not add any information that may make the variable more predictive
+2.does not keep the information of the ignored variables
